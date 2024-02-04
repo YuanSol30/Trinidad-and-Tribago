@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navigation links style */
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* Other styling properties */
+}
+
+/* Dropdown Button */
+/* Add this CSS to the existing styles */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #fff;
+  color: black;
+  font-weight: 790;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-item {
+  position: relative;
+  /* Other styles */
+}
+
+/* Button styles */
+.dropbtn {
+  background-color: #fff;
+  /* Change to match your nav color */
+  color: black;
+  cursor: pointer;
+  /* Other styles */
+}
+
+/* Dropdown content container */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1;
+}
+
+/* Column within dropdown */
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-column-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* Other styles */
+}
+
+/* Link styles within the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 100px 100px;
+  /* Spacing for each link */
+  text-decoration: none;
+  display: block;
+  /* Other styles */
+}
+
+/* Hover styles for dropdown */
+.nav-item:hover .dropdown-content {
+  display: flex;
+  /* Change to flex to align columns */
+}
+
+/* Hover styles for links */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.heading-2 {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 0px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  /* Reduced padding for a slimmer bar */
+  border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+  height: auto;
+  width: 80px;
+  /* Reduced width for a slimmer logo */
+  border-right: 1px solid #ccc;
+}
+
+.search {
+  flex-grow: 1;
+  /* Search should take up the remaining space */
+  margin: 0 20px;
+  /* Add some space on the left and right */
+}
+
+.search input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-actions a {
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.user-actions img {
+  height: 24px;
+}
+
+.bottom-section {
+  background: #f8f9fa;
+  padding: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.nav-links a {
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+  .top-section,
+  .bottom-section {
+    flex-direction: column;
+  }
+
+  .search,
+  .user-actions {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search input[type="text"] {
+    width: calc(100% - 50px);
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+.packages {
+  padding: 50px 0;
+}
+
+.packages .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.packages .main-txt {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.packages h1 span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.packages .row {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Allow items to wrap into multiple rows */
+}
+
+.packages .col-md-4 {
+  position: relative;
+  width: 25%;
+  /* Divide the columns into 4 equal parts */
+  padding: 0 10px;
+  /* Reduced padding */
+}
+
+.packages .card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 15px;
+  /* Reduced padding */
+  height: 100%;
+}
+
+.packages .card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  /* Adjusted max-height for the image box */
+}
+
+.packages .card-body {
+  text-align: center;
+}
+
+.packages .card-body h3 {
+  margin-top: 15px;
+  /* Adjusted margin */
+  font-size: 18px;
+  /* Adjusted font size */
+  font-weight: bold;
+}
+
+.packages .card-body p {
+  font-size: 14px;
+  /* Adjusted font size */
+  line-height: 1.5;
+  /* Adjusted line height */
+}
+
+.packages .card-body h6 {
+  margin-top: 8px;
+  /* Adjusted margin */
+  font-weight: bold;
+}

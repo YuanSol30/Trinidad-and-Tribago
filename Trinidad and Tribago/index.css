@@ -1,0 +1,49 @@
+html{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+
+#heading-1{
+    top: 30px;
+    left:500px;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#img-1{
+    position: absolute;
+    height:125px ;
+    width:125px;
+    margin:-210px 900px;
+}
+
+
+.Slide-show{
+    cursor:pointer;
+}
+
+.mySlides{
+    position:relative;
+    padding:0px;
+    cursor:pointer; 
+    width: 1900px;
+    height:1000px;
+    object-fit: cover;
+    /* display:contents; */
+}
+
+.button{
+    background:#fff;
+    border: 1px solid #ececec;
+    margin-left:-1px;
+    margin-right:-1px;
+    padding:15px;
+}
+
+

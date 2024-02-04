@@ -1,0 +1,95 @@
+.footer {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding-top: 20px; /* Padding only at the top */
+  }
+  
+  .footer-inner {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    flex-wrap: wrap; /* Allow items to wrap as needed */
+    border: 1px solid #ccc; /* Encapsulating border */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Inner padding within the border */
+    max-width: 1200px; /* Maximum width of the footer content */
+  }
+  
+  .footer-section {
+    margin: 0 20px; /* Margin to separate columns */
+    padding-bottom: 20px; /* Padding at the bottom of each section */
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px; /* Space below the section title */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #4A4A4A; /* The color code you provided or sampled from the image */
+    text-decoration: none;
+    line-height: 1.6;
+    display: block; /* Make the links block level for full-width hit area */
+  }
+  
+  .newsletter {
+    flex-basis: 100%; /* Make the newsletter take full width of the container */
+    border-top: 1px solid #ccc; /* Border at the top of the newsletter */
+    margin-top: 20px; /* Space above the newsletter */
+    padding-top: 20px; /* Space at the top inside the newsletter */
+  }
+  
+  .newsletter p {
+    font-size: 0.9em;
+    color: #4A4A4A; /* Make sure the paragraph text matches the link colors */
+    margin-bottom: 20px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    width: 100%;
+  }
+  
+  .newsletter input[type="email"],
+  .newsletter button {
+    margin: 5px; /* Margin for spacing */
+  }
+  
+  .newsletter input[type="email"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-inner {
+      flex-direction: column;
+      border: none; /* Remove border on small screens */
+    }
+  
+    .footer-section,
+    .newsletter {
+      border: none; /* Remove individual borders on small screens */
+      margin: 0; /* Reset margins on small screens */
+      padding: 10px 0; /* Reduced padding for a slimmer layout on mobile */
+    }
+  
+    .newsletter {
+      border-top: 1px solid #ccc; /* Keep the top border for newsletter */
+      order: -1; /* Position newsletter at the top */
+    }
+  }
+  

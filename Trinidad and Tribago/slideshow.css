@@ -1,0 +1,10 @@
+#container{
+    position: relative;
+    width: 50%;
+}
+
+.responsive{ 
+    display: block;
+    width: 100%;
+    height: auto;
+}
